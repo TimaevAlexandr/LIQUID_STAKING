@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/Style.css">
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>BonshStakers</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_title">
+                <a href="#!" class="logo">Bonch Stakers</a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                    <li class="nav-item"> <a href="#">О нас</a>
+                    <ul>
+                        <li class="nav-item"><a href="#">Как это работает</a></li>
+                        <li class="nav-item"><a href="#">Поддерживаемые сети</a></li>
+                    </ul>
+                </li> 
+                    <li class="nav-item"> <a href="#!" class="nav-link">Сообщество</a>
+                    <ul>
+                        <li class="nav-item"><a href="#">В разработке</a></li>
+                    </ul>
+                </li>
+                    </ul>
+                </nav>
+                <button class="burger">
+                    <span class="glowing-button">
+                        Н<span class="family-letter">aч</span><span>ать</span>
+                    </span>
+                </button>
+               <a href="#"><img src="img/iconteleg.svg" width="42" alt="Logofortelegram"></a>
+            </div>
+            <div class="header-row">
+                <div class="header-content">
+                    <h1 class="h1">Зона</h1>
+                    <h2 class="h2"><span>Ликвид</span><span>ного</span></h2>
+                    <h3 class="h3" id="label_status"><span>Стейк</span><span>инга</span></h3>
+                    </div>
+                    <div class="header-img">
+                        <img src="./img/Illustration 5.jpg" alt="" width="550">
+                
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="works">
+        <div class="container">
+            <h2 class="h2s">Как это работает?</h2>
+            <div class="circle">
+                <div class="frame3"></div>
+                    <div class="c3">
+                        <div class="c4">
+                            <div class="c5"> 
+                                <div class="c6"> 
+                                    <div class="frame1"></div>
+                                    <div class="c7"> 
+                                        <div class="c8"> 
+                                            <div class="c9">
+                                                <div class="frame2"></div>
+                                                <div class="c10">
+                                                    <div class="c11">
+                                                        <div class="c12">
+                                                            <div class="c13">
+                                                                <div class="c14">
+                                                                    <div class="c15">
+                                                                        <div class="c16">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="forma">
+        <div class="container">
+            <div class="wallet">
+                <span class="showAccount"></span>
+                <button id="wallet-button" class="wallet2"  onClick="connect()"> <span class="glowing-wallet">
+                    <span class="family">Привязать кошелек</span>
+                </span>
+            </button>
+            <a href="#"><img src="/img/MetaMask_Fox.svg.png" width="42" alt=""></a>
+            </div>
+            <div id='login-form'class='login-page'>
+                <div data-aos="zoom-in" data-aos-duration="2000" class="form-box">
+                    <div class='button-box'>
+                        <div id='btn'></div>
+                        <button type='button' onclick="change_to_stake()" class='toggle-btn'>Стейк</button>
+                        <button type='button' onclick="change_to_unstake()" class='toggle-btn'>Анстейк</button>
+                    </div>
+                    <form id='login' class='input-group-login'>
+                        <h2>Стейк</h2>
+                        <label id="summ">Сумма для стейкинга:</label>
+                        <input id="Stake_entry" name="Stake_entry" type='text' class='input-field' required>
+                        <label id="stake_get"></label>
+                <button type='button'class='submit-btn' onclick="window.Stake()">Стейк</button>
+             </form >
+             <form id='register' class='input-group-register'>
+                <h2>Анстейк</h2>
+                <label id="summ">Сумма для анстейкинга:</label>
+                 <input type='text'class='input-field' id="unStake_entry" required>
+                 <label id = 'unstake_get'>Что получаешь:</label>
+                        <button type='button'class='submit-btn' onclick="window.UnStake(document.getElementById('Stake_entry').value)">Анстейк</button>
+                 </form>
+                </div>
+            </div> <!-- меняет положение по x (y.style.left)-->
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+        <div class="footer-bootom">
+            <p class="text-p footer-copyright">copyright &copy;2023 BonshStakers</p>
+            <p class="text-p footer-brand">Разработано командой BonchStakers</p>
+        </div>
+    </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
